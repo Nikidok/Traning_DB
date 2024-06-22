@@ -1,0 +1,50 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #ffd333;
+    padding: 2rem;
+    font-size: 2em;
+    font-family: Tinos;
+}
+
+header h2 {
+    color: #ffd333;
+}
+
+#analysis-data-btn, #edit-data-btn {
+    text-decoration: none;
+    border-radius: 0.5em;
+    padding: 0.5em 1em;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+#analysis-data-btn {
+    background-color: #ffd333;
+    color: #fff;
+    border: 2px solid #ffd333;
+}
+
+#edit-data-btn {
+    background-color: #3d464d;
+    color: #fff;
+    border: 2px solid #3d464d;
+}
+
+#analysis-data-btn:hover {
+    background-color: #fff;
+    color: #ffd333; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#edit-data-btn:hover {
+    background-color: #fff;
+    color: rgb(105, 104, 104); 
+    box-shadow: 0 0 10px black;
+}

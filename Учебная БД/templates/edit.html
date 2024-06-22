@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block content %}
+<main>
+    <div class="block">
+        <button id="products-edit" class="analysis-btn">Товары</button>
+        <button id="clients-edit" class="analysis-btn">Клиенты</button>
+        <button id="sales-edit" class="analysis-btn">Продажи</button>
+        <button id="invoices-edit" class="analysis-btn">Поступление</button>
+
+        <div class="pop_up" id="pop_up">
+            <div class="pop_up_container">
+                <div class="pop_up_body" id="pop_up_body">
+                    <div id="initialActions">
+                        <p>Выберите действие</p>
+                        <button id="edit-btn" class="analysis-btn">Изменить</button>
+                        <button id="add-btn" class="analysis-btn">Добавить</button>
+                        <button id="delete-btn" class="analysis-btn">Удалить</button>
+                    </div>
+                    <div id="formContainer" style="display:none;">
+                        <form id="dataForm" action="">
+                            <p id="formTitle">Введите данные</p>
+                            <div id="formContent">
+                                <input type="text" placeholder="Введите данные">
+                                <input type="text" placeholder="Введите данные">
+                            </div>
+                            <div class="formButton"><button></button></div>
+                        </form>
+                    </div>
+                    <div class="pop_up_close" id="pop_up_close">&#10006;</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+{% endblock content %}

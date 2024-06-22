@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block content %}
+<main>
+    <div class="sidebar">
+        <h1>Таблицы</h1>
+        <button id="products" class="analysis-btn" style="margin-top: 5px;">Товары</button>
+        <button id="type-product" class="analysis-btn">Типы товаров</button>
+        <button id="unit" class="analysis-btn">Ед. измерения</button>
+        <button id="clients" class="analysis-btn">Клиенты</button>
+        <button id="sales" class="analysis-btn">Продажи</button>
+        <button id="invoices" class="analysis-btn">Поступления</button>
+        <h1>Функции</h1>
+        <button id="client-disc" class="analysis-btn" title="Вывод списка клиентов со скидкой 10%">Клиенты с 10% дисконтом</button>
+        <button id="sales-dynamics" class="analysis-btn" title="Вывод динамики продаж за опредленный период">Динамика продаж/поступлений</button>
+        <button id="clients-birthdays" class="analysis-btn" title="Вывод списка клиентов с днем рождения в ближайшие 10 дней">Дни рождения клиентов</button>
+    </div>
+    <div class="content">
+        <div id="data-container"></div>
+    </div>
+    <div id="date-picker" style="display: none;">
+        <label for="start-date">Выберите дату:</label>
+        <input type="date" id="start-date" name="start-date">
+        <label for="end-date" id="end-date-label">Выберите конечную дату:</label>
+        <input type="date" id="end-date" name="end-date">
+        <div id="product_choice">
+            <label for="product-id" id="label-product-id">Введите Id продукта:</label>
+            <input type="text" id="product-id" name="product-id">
+        </div>
+        <button id="function" class="analysis-btn">Вывести</button>
+    </div>
+    
+</main>
+{% endblock content %}
