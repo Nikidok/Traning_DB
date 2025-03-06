@@ -1,1 +1,1 @@
-# -
+Clothing store database
